@@ -1,0 +1,115 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.header {
+    background-color: #222;
+    padding: 20px;
+    color: white;
+}
+
+.header__title {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.nav__list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav__item {
+    margin: 0 15px;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.nav__link:hover {
+    text-decoration: underline;
+}
+
+.section {
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.section__title {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.section__article-title {
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 0;
+}
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+    margin: 5px 0;
+}
+
+.highlight-text {
+    font-weight: 700;
+}
+
+.italic-text {
+    font-style: italic;
+}
+
+.underline {
+    text-decoration: underline;
+}
+
+.bold-text {
+    font-weight: bold;
+}
+
+.strikethrough-text {
+    text-decoration: line-through;
+}
+
+blockquote {
+    font-style: italic;
+    padding-left: 10px;
+    border-left: 4px solid #ddd;
+}
+
+code {
+    background-color: #f0f0f0;
+    padding: 5px;
+    font-family: 'Courier New', monospace;
+}
+
+.footer {
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    font-size: 14px;
+}
+
+img {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
