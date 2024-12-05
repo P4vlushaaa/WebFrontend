@@ -184,7 +184,6 @@ td {
     }
 }
 
-/* Секция для рекламы */
 .advertisement-section {
     display: flex;
     justify-content: center;
@@ -192,13 +191,12 @@ td {
 }
 
 .advertisement {
-    max-width: 100%; /* Чтобы реклама адаптировалась под ширину экрана */
+    max-width: 100%;
     height: auto;
-    border-radius: 10px; /* Добавляем закругленные края */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Тень для красоты */
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-/* Убираем рекламу на маленьких экранах */
 @media screen and (max-width: 768px) {
     .advertisement {
         display: none;
