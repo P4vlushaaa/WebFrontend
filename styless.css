@@ -1,0 +1,206 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.header {
+    background-color: #222;
+    padding: 20px;
+    color: white;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+.header__title {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.nav__list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav__item {
+    margin: 0 15px;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.nav__link:hover {
+    text-decoration: underline;
+}
+
+.section {
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.section__title {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.section__articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.section__article {
+    flex: 1 1 calc(33.333% - 20px);
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 30px;
+    background-color: #fff;
+}
+.section__article img {
+    margin-left: 70px;
+}
+
+.section__article-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 5px; 
+}
+
+.section__article img {
+    width: 80%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.table-responsive {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+
+.table-responsive thead,
+.table-responsive tbody, .table-responsive tr {
+    display: contents;
+}
+
+.table th, .table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+.odd-row {
+    background-color: #f9f9f9;
+}
+
+.even-row {
+    background-color: #fff;
+}
+
+.footer {
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    font-size: 14px;
+}
+
+img {
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+}
+
+.table-container {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.table {
+    width: 100%;
+    max-width: 800px;
+    border-collapse: collapse;
+    text-align: center;
+    background-color: #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+thead {
+    background-color: #1e3a8a;
+    color: black;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+th {
+    font-weight: bold;
+    font-size: 16px;
+}
+
+td {
+    font-size: 14px;
+    color: #333;
+}
+
+@media screen and (max-width: 768px) {
+    .table {
+        font-size: 12px;
+    }
+}
+
+/* Секция для рекламы */
+.advertisement-section {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.advertisement {
+    max-width: 100%; /* Чтобы реклама адаптировалась под ширину экрана */
+    height: auto;
+    border-radius: 10px; /* Добавляем закругленные края */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Тень для красоты */
+}
+
+/* Убираем рекламу на маленьких экранах */
+@media screen and (max-width: 768px) {
+    .advertisement {
+        display: none;
+    }
+}
