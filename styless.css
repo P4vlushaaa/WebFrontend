@@ -129,60 +129,43 @@ img {
     border-radius: 8px;
 }
 
-.table-container {
-    margin-top: 20px;
-    display: flex;
-    justify-content: center;
-    padding: 20px;
-    background-color: #ffffff;
-    border-radius: 8px;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-}
-
-.table {
+table {
+    display: grid;
     width: 100%;
-    max-width: 800px;
     border-collapse: collapse;
-    text-align: center;
-    background-color: #ffffff;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    grid-template-columns: repeat(3, 1fr);
+    overflow-x: auto;
 }
 
 thead {
-    background-color: #1e3a8a;
-    color: black;
+    display: contents;
+}
+
+tbody {
+    display: contents;
 }
 
 th, td {
     padding: 10px;
-    border: 1px solid #ddd;
+    text-align: left;
+    border: 1px solid #000000a9;
 }
-
-tr:nth-child(even) {
-    background-color: #f9f9f9;
-}
-
-tr:nth-child(odd) {
-    background-color: #ffffff;
-}
-
 th {
+    background-color: black;
+    color: white;
+}
+tr {
+    display: contents;
+}
+tr:nth-child(even) td {
+    background-color: hsl(226, 9%, 73%);
     font-weight: bold;
-    font-size: 16px;
+}
+tr:nth-child(odd) td {
+    background-color: white;
+    font-weight: bold;
 }
 
-td {
-    font-size: 14px;
-    color: #333;
-}
-
-@media screen and (max-width: 768px) {
-    .table {
-        font-size: 12px;
-    }
-}
 
 .advertisement-section {
     display: flex;
