@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+body {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+}
+
+.header {
+    background-color: #222;
+    padding: 20px;
+    color: white;
+}
+
+.header__title {
+    font-size: 24px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.nav__list {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.nav__item {
+    margin: 0 15px;
+}
+
+.nav__link {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    font-weight: 400;
+}
+
+.nav__link:hover {
+    text-decoration: underline;
+    color: rgb(102, 102, 251);
+}
+
+.nav__link.active {
+    font-weight: bold;
+    color: rgb(55, 24, 255);
+}
+
+.section {
+    padding: 20px;
+    margin: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.section__title {
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 10px;
+}
+
+.section__articles {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.section__article {
+    flex: 1 1 calc(33.333% - 20px);
+    margin: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 30px;
+    background-color: #fff;
+}
+.section__article img {
+    margin-left: 70px;
+}
+
+.section__article-title {
+    font-size: 18px;
+    font-weight: 700;
+    margin-bottom: 5px; 
+}
+
+.section__article img {
+    width: 80%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.footer {
+    text-align: center;
+    background-color: #222;
+    color: white;
+    padding: 20px;
+    font-size: 14px;
+}
+
+table {
+    display: grid;
+    width: 100%;
+    border-collapse: collapse;
+    grid-template-columns: repeat(3, 1fr);
+    overflow-x: auto;
+}
+
+thead {
+    display: contents;
+}
+
+tbody {
+    display: contents;
+}
+
+th, td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #000000a9;
+}
+th {
+    background-color: black;
+    color: white;
+}
+tr {
+    display: contents;
+}
+tr:nth-child(even) td {
+    background-color: hsl(226, 9%, 73%);
+    font-weight: bold;
+}
+tr:nth-child(odd) td {
+    background-color: white;
+    font-weight: bold;
+}
